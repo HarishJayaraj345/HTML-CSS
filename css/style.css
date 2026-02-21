@@ -1,0 +1,11 @@
+/* div>p{
+    background-color: aquamarine;
+}
+h2+p{
+    font-family: fantasy;
+    color: blueviolet;
+} */
+h2~p,h3{
+    background-color: rgb(192, 240, 21);
+    
+}

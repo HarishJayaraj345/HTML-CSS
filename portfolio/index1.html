@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Fresher web developer portfolio — projects, skills and contact." />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <a href="#hero" class="logo">YourName<span class="dot">.</span></a>
+        <button id="theme-toggle" aria-pressed="false" aria-label="Toggle theme Moon or Noon" class="theme-btn">
+          <span id="theme-icon" aria-hidden="true">🌙</span>
+          <span class="theme-label">Moon</span>
+        </button>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Your Name</span></h1>
+          <p class="lead">A fresher web developer who builds clean, accessible, and interactive front-end projects.</p>
+          <p class="hero-cta">
+            <a href="#projects" class="pbtn btn-primary">See my work</a>
+            <a href="#contact" class="btn btn-outline">Hire / Contact</a>
+          </p>
+          <ul class="meta">
+            <li>Location: Your City</li>
+            <li>Open to internships & junior roles</li>
+          </ul>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <!-- placeholder illustration -->
+          <svg width="260" height="180" viewBox="0 0 260 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="260" height="180" rx="12" fill="var(--panel)"/>
+            <circle cx="60" cy="60" r="28" fill="var(--accent)"/>
+            <rect x="110" y="40" width="120" height="12" rx="6" fill="rgba(255,255,255,0.06)"/>
+            <rect x="110" y="64" width="100" height="12" rx="6" fill="rgba(255,255,255,0.04)"/>
+            <rect x="24" y="120" width="212" height="12" rx="6" fill="rgba(255,255,255,0.03)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a fresher developer focused on front-end development and UI. I love turning ideas into accessible web experiences using HTML, CSS and JavaScript.</p>
+        <p>Currently learning advanced JavaScript and building small projects to demonstrate problem solving and clean code. Open to internships.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-list" role="list">
+          <li>HTML5 • Semantic markup</li>
+          <li>CSS3 • Flexbox • Grid • Responsive</li>
+          <li>JavaScript (ES6+) • DOM • Fetch API</li>
+          <li>React (basics) • Version control (Git)</li>
+          <li>Accessibility & performance mindset</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <!-- project card 1 -->
+          <article class="project-card">
+            <div class="thumb" style="background-image: linear-gradient(135deg,var(--accent), rgba(0,0,0,0.1));"></div>
+            <div class="p-content">
+              <h3>Project One — Interactive UI</h3>
+              <p>Built with vanilla JS and CSS Grid. Showcases animations, accessibility and responsive layouts.</p>
+              <p class="meta small">Tools: HTML, CSS, JS • Role: Solo</p>
+              <p class="project-links">
+                <a href="#" class="link">Live</a>
+                <a href="#" class="link">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- project card 2 -->
+          <article class="project-card">
+            <div class="thumb" style="background-image: linear-gradient(135deg, rgba(64,224,208,0.9), rgba(0,0,0,0.06));"></div>
+            <div class="p-content">
+              <h3>Project Two — Small App</h3>
+              <p>A small single-page app demonstrating API usage and state management.</p>
+              <p class="meta small">Tools: JS, Fetch API • Role: Solo</p>
+              <p class="project-links">
+                <a href="#" class="link">Live</a>
+                <a href="#" class="link">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- project card 3 -->
+          <article class="project-card">
+            <div class="thumb" style="background-image: linear-gradient(135deg,var(--accent-dark), rgba(0,0,0,0.06));"></div>
+            <div class="p-content">
+              <h3>Project Three — Mini Game</h3>
+              <p>Fun little game demonstrating DOM manipulation and animation performance techniques.</p>
+              <p class="meta small">Tools: JS, Canvas • Role: Solo</p>
+              <p class="project-links">
+                <a href="#" class="link">Live</a>
+                <a href="#" class="link">Code</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you like what you see, let's chat — open to internships or junior roles.</p>
+
+        <form id="contact-form" class="contact-form" action="#" onsubmit="return handleContact(event)" autocomplete="on">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" required type="text" placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" required type="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Short message"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </div>
+        </form>
+
+        <p class="small muted">Or find me on <a href="#" class="link">GitHub</a> • <a href="#" class="link">LinkedIn</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js.js" defer></script>
+</body>
+</html>

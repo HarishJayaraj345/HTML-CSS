@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <form action="Res.html">
+    <label for="firstname">First Name :</label>
+    <input type="text" placeholder="First name"><br>
+
+    <label for="lastname">Last Name :</label>
+    <input type="text" placeholder="Last name"><br>
+
+    <label>Gender:</label><br>
+    <input type="radio"  name="gender" value="Male">
+    <label for="male">Male</label>
+
+    <input type="radio"  name="gender" value="Female">
+    <label for="female">Female</label><br>
+
+    <input type="radio"  name="gender" value="Other">
+    <label for="other">Other</label><br>
+
+    <input type="checkbox"  name="terms" required>
+    <label for="terms">I agree to the terms and conditions</label><br>
+
+    <label for="country">Choose a country:</label>
+    <input list="countries"  name="country" placeholder="countries">
+    <datalist id="countries">
+      <option value="India">
+      <option value="USA">
+      <option value="Canada">
+      <option value="Australia">
+      <option value="Germany">
+      </datalist><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" ><br>
+
+    <label for="fileUpload">Upload your photo:</label>
+    <input type="file" ><br>
+
+    <input type="submit">
+    <input type="reset">
+    </form>
+
+</head>
+<body>
+</body>
+</html>
